@@ -4,7 +4,7 @@ module Rolify
     @@orm = "active_record"
      
     def configure(*role_cnames)
-      return if !sanity_check(role_cnames)
+      # return if !sanity_check(role_cnames)
       yield self if block_given?
     end
 
